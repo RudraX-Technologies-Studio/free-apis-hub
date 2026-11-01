@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintained By RudraX](https://img.shields.io/badge/Curated%20By-RudraX%20Technologies%20Studio-blue)](https://rudraxstudio.freedev.app)
 
-Welcome to **Free APIs Hub** — an enterprise-grade index cataloging **50 verified, 100% keyless public APIs and inference gateways**. 
+Welcome to **Free APIs Hub** — an enterprise-grade index cataloging **51 verified, 100% keyless public APIs and inference gateways**. 
 
 Eliminate developer onboarding friction:
 - ❌ No API key generation required
@@ -18,9 +18,9 @@ Eliminate developer onboarding friction:
 
 ---
 
-## 📑 Directory Navigation (5 Modules • 50 Endpoints)
+## 📑 Directory Navigation (5 Modules • 51 Endpoints)
 
-The collection is systematically partitioned into 5 technical modules, each housing 10 production-tested endpoints:
+The collection is systematically partitioned into 5 technical modules: 10 endpoints in each of the first four modules and 11 in the utility module:
 
 | Category Module | File Reference | Highlights |
 |---|---|---|
@@ -47,7 +47,7 @@ Provides 10 high-speed identity datasets and SVG avatar engines (DiceBear, Rando
 Covers 10 computational linguistics endpoints, live encyclopedic summaries, lexical association tools, translation nodes, and trivia feeds accessible through standard GET calls.
 
 ### ⚙️ [Module 5: Audio, Sandboxed Code & Utilities](./audio-code-and-utility-apis.md)
-Features 10 native utilities including web audio synthetics, sandboxed multi-language compilation engines (Piston), localized Whisper speech recognition, and high-accuracy weather feeds.
+Features 11 native utilities including web audio synthetics, sandboxed multi-language compilation engines (Piston), localized Whisper speech recognition, and high-accuracy weather feeds.
 
 ---
 
