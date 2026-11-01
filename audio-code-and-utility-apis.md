@@ -1,6 +1,6 @@
 # ⚙️ 100% Zero-Key Voice, Code Execution & Utility APIs
 
-This document indexes 10 directly callable, keyless endpoints covering browser speech engines, localized audio transcription, dynamic multi-language code execution, real-time meteorological feeds, network geolocation, and productivity suggestions. Developers can integrate these interfaces immediately without authentication tokens or developer registrations.
+This document indexes 11 directly callable, keyless endpoints covering browser speech engines, localized audio transcription, dynamic multi-language code execution, real-time meteorological feeds, network geolocation, and productivity suggestions. Developers can integrate these interfaces immediately without authentication tokens or developer registrations.
 
 ---
 
@@ -18,6 +18,7 @@ This document indexes 10 directly callable, keyless endpoints covering browser s
 | WorldTimeAPI | GET | http://worldtimeapi.org/api/timezone/Etc/UTC | None | 0% (No key needed) |
 | IP-API Location | GET | http://ip-api.com/json/ | None | 0% (No key needed) |
 | Bored Activity API | GET | https://bored-api.appbrewery.com/random | None | 0% (No key needed) |
+| Bucketlist.nl Dream of the Day | GET | https://bucketlist.nl/api/droom-van-de-dag | None | 0% (No key needed) |
 
 ---
 
@@ -79,18 +80,28 @@ This document indexes 10 directly callable, keyless endpoints covering browser s
 - Direct cURL Execution:
   curl https://bored-api.appbrewery.com/random
 
+### 9. Bucketlist.nl Dream of the Day
+- Endpoint: GET https://bucketlist.nl/api/droom-van-de-dag
+- Output: One daily travel or life-experience idea with image metadata and a canonical source URL.
+- Language: Dutch by default; this is daily curated content, not a random-activity endpoint.
+- Token Requirement: No registration, API key, purchased service, or private authentication header.
+- Documentation: [Official OpenAPI specification](https://bucketlist.nl/brand/droom-van-de-dag.openapi.json).
+- Limits and licensing: Numerical request quotas and an SLA are not published. The repository MIT licence does not license API content or images.
+- Direct cURL Execution:
+  curl "https://bucketlist.nl/api/droom-van-de-dag"
+
 ---
 
 ## 💻 Standalone Keyless Local Engines
 
-### 9. Whisper.cpp Local Speech-to-Text
+### 10. Whisper.cpp Local Speech-to-Text
 - Endpoint: POST http://localhost:8080/inference
 - Execution: High-performance localized C++ speech transcription server.
 - Token Requirement: Completely local open port; no API keys required.
 - Direct cURL Execution:
   curl http://localhost:8080/inference -H "Content-Type: multipart/form-data" -F file=@recording.wav -F temperature="0.0"
 
-### 10. Coqui TTS Local Engine
+### 11. Coqui TTS Local Engine
 - Endpoint: POST http://localhost:5002/api/tts
 - Execution: Deep learning neural speech synthesis running on on-premise hardware.
 - Token Requirement: Completely local execution without key validation barriers.
